@@ -1,4 +1,4 @@
-# JotaTextEditor
+# Jota Text Editor
 Text Editor for Android
 
 on Google Play https://play.google.com/store/apps/details?id=jp.sblo.pandora.jota
@@ -8,6 +8,4 @@ Copy Attached android.jar onto %your-android-sdk%/platforms/android-23/ (needs o
 
 (You should backup original android.jar)
 
-
-
-
+Copyright by Aquamarine Networks.
