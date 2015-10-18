@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+
+<item android:title="@string/menu_file"
+		android:id="@+id/menu_file"
+		android:icon = "@drawable/ic_menu_archive"
+		>
+    <menu>
+        <item android:id="@+id/menu_file_history" 	
+		android:title="@string/menu_file_history" 
+		
+	/>
+        <item android:id="@+id/menu_file_save" 		
+		android:title="@string/menu_file_save" 
+		
+	/>
+        <item android:id="@+id/menu_file_saveas" 
+		android:title="@string/menu_file_saveas" 
+		
+	/>
+        <item android:id="@+id/menu_file_open" 		
+		android:title="@string/menu_file_open" 
+		
+	/>
+        <item android:id="@+id/menu_file_new" 		
+		android:title="@string/menu_file_new"		
+		
+	 />
+        <item android:id="@+id/menu_file_view" 		
+		android:title="@string/menu_file_view"		
+		
+	 />
+        <item android:id="@+id/menu_file_share" 		
+		android:title="@string/menu_file_share"		
+	 />
+        <item android:id="@+id/menu_file_charcode" 
+		android:title="@string/menu_file_charcode" 
+	/>
+        <item android:id="@+id/menu_file_lbcode" 
+		android:title="@string/menu_file_lbcode" 
+	/>
+        <item android:id="@+id/menu_file_shortcut" 
+		android:title="@string/menu_file_shortcut" 
+	/>
+        <item android:id="@+id/menu_file_property" 
+		android:title="@string/menu_file_property" 
+		
+	/>
+        <item android:id="@+id/menu_file_quit" 
+		android:title="@string/menu_file_quit" 
+		
+	/>
+    </menu>
+
+</item>
+
+
+<item android:title="@string/menu_edit" 
+		android:id="@+id/menu_edit"
+		android:icon = "@drawable/ic_menu_edit"
+		>
+
+    <menu>
+        <item android:id="@+id/menu_edit_undo" 	
+		android:title="@string/menu_edit_undo" 
+		
+	/>
+        <item android:id="@+id/menu_edit_redo" 	
+		android:title="@string/label_redo" 
+		
+	/>
+        <item android:id="@+id/menu_edit_cut" 	
+		android:title="@string/cut" 
+		
+	/>
+        <item android:id="@+id/menu_edit_copy" 	
+		android:title="@string/copy" 
+		
+	/>
+        <item android:id="@+id/menu_edit_paste" 
+		android:title="@string/paste" 
+		
+	/>
+        <item android:id="@+id/menu_edit_select_all" 
+		android:title="@string/selectAll" 
+		
+	/>
+        <item android:id="@+id/menu_edit_jump" 	
+		android:title="@string/menu_edit_jump" 
+		
+	/>
+        <item android:id="@+id/menu_search_byintent" 	
+		android:title="@string/menu_search_byintent" 
+		
+	/>
+        <item android:id="@+id/menu_share" 	
+		android:title="@string/menu_share" 
+		
+	/>
+        <item android:id="@+id/menu_share_screenshot" 	
+		android:title="@string/menu_share_screenshot" 
+	/>
+    </menu>
+
+</item>
+
+<item android:title="@string/menu_direct"
+		android:id="@+id/menu_direct"
+		android:icon = "@drawable/ic_menu_direct"
+		>
+
+</item>
+
+<item android:title="@string/menu_insert"
+		android:id="@+id/menu_insert"
+		android:icon = "@drawable/ic_menu_compose"
+		>
+
+</item>
+
+<item android:title="@string/menu_search"
+		android:id="@+id/menu_search"
+		android:icon = "@drawable/ic_menu_search"
+		>
+
+</item>
+
+<item android:title="@string/menu_preferences" 
+		android:id="@+id/menu_preferences"
+		android:icon = "@drawable/ic_menu_preferences"
+>
+
+</item>
+<!---
+<item android:title="@string/menu_help" 
+		android:id="@+id/menu_help"
+		android:icon = "@drawable/ic_menu_help" >
+    <menu>
+        <item android:id="@+id/menu_help_help" 		
+		android:title="@string/menu_help_help" 
+	/>
+        <item android:id="@+id/menu_help_about"		
+		android:title="@string/menu_help_about" 
+	/>
+    </menu>
+
+</item>
+-->
+
+</menu>
