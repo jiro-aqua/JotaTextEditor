@@ -8,15 +8,20 @@ android {
         applicationId "jp.sbro.pandora.jota"
         minSdkVersion 4
         targetSdkVersion 14
-        versionCode 86
-        versionName "0.2.36"
+        versionCode 87
+        versionName "0.2.37"
     }
     buildTypes {
         release {
             minifyEnabled true
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard.flags'
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), '../proguard.flags'
         }
     }
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
 }
 
 dependencies {

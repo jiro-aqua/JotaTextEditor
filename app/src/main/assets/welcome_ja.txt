@@ -2,4 +2,4 @@ Jota Text Editorへようこそ。
 
 JotaはAndroid用のオープンソーステキストエディタです。
 
-(c)2011-2012, Aquamarine Networks.
+(c)2011-2016, Aquamarine Networks.

@@ -51,8 +51,8 @@ public abstract class Layout {
     private static final ParagraphStyle[] NO_PARA_SPANS =
         ArrayUtils.emptyArray(ParagraphStyle.class);
 
-    /* package */ static final EmojiFactory EMOJI_FACTORY =
-        EmojiFactory.newAvailableInstance();
+    static final EmojiFactoryWrapper EMOJI_FACTORY = new EmojiFactoryWrapper();
+
     /* package */ static final int MIN_EMOJI, MAX_EMOJI;
 
     static {
