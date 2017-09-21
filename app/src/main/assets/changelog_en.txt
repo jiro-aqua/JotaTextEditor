@@ -11,6 +11,9 @@ Please try Jota+.
 Touch the banner and try Jota+!
 
 --------------------
+[2017/09/18 v.0.2.38]
+Support Android 8.0.
+
 [2016/09/11 v.0.2.37]
 Support Android 7.0.
 

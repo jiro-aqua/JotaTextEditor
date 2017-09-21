@@ -7,3 +7,6 @@
 }
 -keepattributes SourceFile,LineNumberTable
 
+-keepclassmembers class jp.sblo.pandora.jota.text.SpannableStringBuilder { *; }
+-keep public interface android.graphics.BaseCanvas { *; }
+

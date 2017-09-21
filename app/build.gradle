@@ -8,8 +8,8 @@ android {
         applicationId "jp.sblo.pandora.jota"
         minSdkVersion 4
         targetSdkVersion 14
-        versionCode 87
-        versionName "0.2.37"
+        versionCode 88
+        versionName "0.2.38"
     }
     buildTypes {
         release {
