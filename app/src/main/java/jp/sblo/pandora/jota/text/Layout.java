@@ -16,14 +16,6 @@
 
 package jp.sblo.pandora.jota.text;
 
-import jp.sblo.pandora.jota.KeywordHighlght;
-import jp.sblo.pandora.jota.text.style.AlignmentSpan;
-import jp.sblo.pandora.jota.text.style.LeadingMarginSpan;
-import jp.sblo.pandora.jota.text.style.ParagraphStyle;
-import jp.sblo.pandora.jota.text.style.ReplacementSpan;
-import jp.sblo.pandora.jota.text.style.TabStopSpan;
-import junit.framework.Assert;
-import android.emoji.EmojiFactory;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Paint;
@@ -38,6 +30,15 @@ import android.text.method.TextKeyListener;
 import android.view.KeyEvent;
 
 import com.android.internal.util.ArrayUtils;
+
+import junit.framework.Assert;
+
+import jp.sblo.pandora.jota.KeywordHighlght;
+import jp.sblo.pandora.jota.text.style.AlignmentSpan;
+import jp.sblo.pandora.jota.text.style.LeadingMarginSpan;
+import jp.sblo.pandora.jota.text.style.ParagraphStyle;
+import jp.sblo.pandora.jota.text.style.ReplacementSpan;
+import jp.sblo.pandora.jota.text.style.TabStopSpan;
 
 /**
  * A base class that manages text layout in visual elements on

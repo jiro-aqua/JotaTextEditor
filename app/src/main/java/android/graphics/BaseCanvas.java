@@ -1,5 +1,5 @@
-package android.graphics;
-
-public interface BaseCanvas {
-
-}
+//package android.graphics;
+//
+//public interface BaseCanvas {
+//
+//}

@@ -38,6 +38,7 @@ import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.content.res.TypedArray;
 import android.content.res.XmlResourceParser;
+import android.graphics.BaseCanvas;
 import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.graphics.Path;
@@ -2970,6 +2971,13 @@ public class TextView extends View implements ViewTreeObserver.OnPreDrawListener
             c.drawText(mChars, start + mStart, end - start, x, y, p);
         }
 
+        @Override
+        public void drawText(BaseCanvas baseCanvas, int i, int i1, float v, float v1, Paint paint) {
+            if ( baseCanvas instanceof Canvas ){
+                drawText((Canvas) baseCanvas, i, i1, v, v1, paint);
+            }
+        }
+
         public float measureText(int start, int end, Paint p) {
             return p.measureText(mChars, start + mStart, end - start);
         }
@@ -3011,10 +3019,18 @@ public class TextView extends View implements ViewTreeObserver.OnPreDrawListener
             return p.getTextRunCursor(mChars, contextStart + mStart,
                     contextCount, flags, offset + mStart, cursorOpt);
         }
-        @Override
+
         public void drawTextRun(Canvas c, int start, int end, int contextStart, int contextEnd, float x, float y, boolean isRtl, Paint p) {
 
         }
+
+        @Override
+        public void drawTextRun(BaseCanvas baseCanvas, int i, int i1, int i2, int i3, float v, float v1, boolean b, Paint paint) {
+            if ( baseCanvas instanceof Canvas ){
+                drawTextRun((Canvas) baseCanvas, i,i1,i2,i3,v,v1,b,paint);
+            }
+        }
+
         @Override
         public float getTextRunAdvances(int start, int end, int contextStart, int contextEnd, boolean isRtl, float[] advances, int advancesIndex, Paint paint) {
             return 0;
@@ -6161,27 +6177,27 @@ public class TextView extends View implements ViewTreeObserver.OnPreDrawListener
         return offset;
     }
 
-    @Override
-    public void debug(int depth) {
-        super.debug(depth);
-
-        String output = debugIndent(depth);
-        output += "frame={" + mLeft + ", " + mTop + ", " + mRight
-                + ", " + mBottom + "} scroll={" + mScrollX + ", " + mScrollY
-                + "} ";
-
-        if (mText != null) {
-
-            output += "mText=\"" + mText + "\" ";
-            if (mLayout != null) {
-                output += "mLayout width=" + mLayout.getWidth()
-                        + " height=" + mLayout.getHeight();
-            }
-        } else {
-            output += "mText=NULL";
-        }
-        Log.d(VIEW_LOG_TAG, output);
-    }
+//    @Override
+//    public void debug(int depth) {
+//        super.debug(depth);
+//
+//        String output = debugIndent(depth);
+//        output += "frame={" + mLeft + ", " + mTop + ", " + mRight
+//                + ", " + mBottom + "} scroll={" + mScrollX + ", " + mScrollY
+//                + "} ";
+//
+//        if (mText != null) {
+//
+//            output += "mText=\"" + mText + "\" ";
+//            if (mLayout != null) {
+//                output += "mLayout width=" + mLayout.getWidth()
+//                        + " height=" + mLayout.getHeight();
+//            }
+//        } else {
+//            output += "mText=NULL";
+//        }
+//        Log.d(VIEW_LOG_TAG, output);
+//    }
 
     /**
      * Convenience for {@link Selection#getSelectionStart}.
